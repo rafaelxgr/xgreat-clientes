@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="150" viewBox="0 0 360 150" role="img" aria-labelledby="title desc">
+  <title id="title">Via Vidros</title>
+  <desc id="desc">Logo da Via Vidros Ricardo Silva</desc>
+  <rect width="360" height="150" fill="none"/>
+  <g transform="translate(18 24)">
+    <path d="M0 0h28l31 76L90 0h28L72 104H46L0 0z" fill="#ffffff"/>
+    <path d="M53 0h28L63 44H35L53 0z" fill="#14b8a6" opacity="0.95"/>
+    <path d="M131 0h25v104h-25z" fill="#ffffff"/>
+    <path d="M175 104 220 0h27l45 104h-29l-7-18h-47l-7 18h-27zm43-42h29l-14-36-15 36z" fill="#ffffff"/>
+  </g>
+  <text x="179" y="136" fill="#ffffff" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" letter-spacing="8">VIDROS</text>
+  <path d="M244 31c18 9 28 25 28 47" fill="none" stroke="#14b8a6" stroke-width="8" stroke-linecap="round" opacity="0.9"/>
+</svg>

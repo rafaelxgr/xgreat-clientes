@@ -10,7 +10,7 @@
   const lightbox = document.querySelector('.lightbox');
   const lightboxImage = lightbox?.querySelector('img');
   const lightboxClose = lightbox?.querySelector('.lightbox-close');
-  const galleryItems = document.querySelectorAll('.gallery-item[data-full]');
+  const galleryItems = document.querySelectorAll('[data-full]');
   const videos = document.querySelectorAll('video');
 
   if (year) {
@@ -35,13 +35,13 @@
     navLinks.forEach((link) => link.addEventListener('click', closeMenu));
 
     window.addEventListener('resize', () => {
-      if (window.innerWidth > 780) closeMenu();
+      if (window.innerWidth > 820) closeMenu();
     });
   }
 
   if (backToTop) {
     const toggleBackToTop = () => {
-      backToTop.classList.toggle('visible', window.scrollY > 500);
+      backToTop.classList.toggle('visible', window.scrollY > 600);
     };
 
     window.addEventListener('scroll', toggleBackToTop, { passive: true });
@@ -62,9 +62,11 @@
     galleryItems.forEach((item) => {
       item.addEventListener('click', () => {
         const src = item.getAttribute('data-full');
+        const thumbnail = item.querySelector('img');
         if (!src) return;
 
         lightboxImage.src = src;
+        lightboxImage.alt = thumbnail?.alt || 'Trabalho ampliado da Infinity Serralheria';
         lightbox.showModal();
         body.classList.add('lightbox-open');
       });
@@ -97,7 +99,7 @@
 
         observer.unobserve(video);
       });
-    }, { rootMargin: '250px 0px' });
+    }, { rootMargin: '280px 0px' });
 
     videos.forEach((video) => videoObserver.observe(video));
   } else {

@@ -3,33 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#07141f">
+  <meta name="theme-color" content="#08141d">
   <meta name="description" content="Infinity Serralheria: portões, corrimãos, guarda-corpos, estruturas metálicas, manutenção e automação em São Paulo e região.">
   <meta name="robots" content="index, follow">
-
   <title>Infinity Serralheria | São Paulo e Região</title>
-
   <link rel="icon" href="assets/FaviconInfinity.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
-    "name": "Infinity Serralheria",
-    "image": "assets/LogoInfinity.png",
-    "telephone": "+55 11 96632-1556",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Av. Sanatório, 697",
-      "addressLocality": "São Paulo",
-      "addressRegion": "SP",
-      "addressCountry": "BR"
-    },
-    "areaServed": "São Paulo e região",
-    "sameAs": ["https://www.instagram.com/infinity_serralheriaa/"]
-  }
-  </script>
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -37,7 +16,7 @@
   <header class="site-header" id="inicio">
     <div class="container header-inner">
       <a class="brand" href="#inicio" aria-label="Infinity Serralheria - início">
-        <img src="assets/LogoInfinity.png" alt="Infinity Serralheria">
+        <span class="brand-crop"><img src="assets/LogoInfinity.png" alt="Infinity Serralheria"></span>
       </a>
 
       <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="menu-principal" aria-expanded="false">
@@ -47,12 +26,11 @@
       <nav class="main-nav" id="menu-principal" aria-label="Navegação principal">
         <a href="#inicio">Início</a>
         <a href="#servicos">Serviços</a>
-        <a href="#trabalhos">Trabalhos</a>
         <a href="#sobre">Sobre</a>
         <a href="#contato">Contato</a>
       </nav>
 
-      <a class="btn btn-whatsapp header-cta" href="https://wa.me/5511966321556?text=Olá%2C%20vim%20pelo%20site%20da%20Infinity%20Serralheria%20e%20gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener noreferrer">
+      <a class="btn btn-header" href="https://wa.me/5511966321556?text=Olá%2C%20vim%20pelo%20site%20da%20Infinity%20Serralheria%20e%20gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener noreferrer">
         <img src="assets/Whats.png" alt="" aria-hidden="true"> Chamar no WhatsApp
       </a>
     </div>
@@ -60,200 +38,107 @@
 
   <main id="conteudo">
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-grid container">
-        <div class="hero-copy">
-          <p class="eyebrow">Serralheria em São Paulo e região</p>
+      <div class="container hero-inner">
+        <div class="hero-content">
           <h1 id="hero-title">Infinity <span>Serralheria</span></h1>
-          <h2>Soluções em serralheria para residências, comércios e obras.</h2>
-          <p>Qualidade, segurança, acabamento profissional e atendimento próximo do início ao fim do projeto.</p>
-
+          <h2>Soluções em serralheria para <strong>residências, comércios e obras.</strong></h2>
+          <p>Qualidade, segurança, acabamento impecável e atendimento próximo do início ao fim do projeto.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="https://wa.me/5511966321556?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento%20com%20a%20Infinity%20Serralheria." target="_blank" rel="noopener noreferrer">
               <img src="assets/Whats.png" alt="" aria-hidden="true"> Chamar no WhatsApp
             </a>
-            <a class="btn btn-outline" href="#servicos">Solicitar orçamento</a>
+            <a class="btn btn-outline" href="#contato">Solicitar orçamento</a>
           </div>
-        </div>
-
-        <div class="hero-photo" role="img" aria-label="Portão metálico produzido pela Infinity Serralheria">
-          <div class="hero-photo-shade"></div>
         </div>
       </div>
     </section>
 
-    <section class="section services" id="servicos" aria-labelledby="services-title">
+    <section class="services" id="servicos" aria-labelledby="services-title">
       <div class="container">
-        <div class="section-heading">
+        <div class="section-title">
           <h2 id="services-title">Nossos serviços</h2>
-          <span class="heading-line"></span>
+          <span></span>
         </div>
 
-        <div class="services-grid services-grid-main">
+        <div class="services-grid">
           <article class="service-card">
-            <img src="assets/portao2.jpg" alt="Portão metálico sob medida" loading="lazy">
-            <div class="service-content">
-              <h3>Portões</h3>
-              <p>Modelos residenciais, comerciais e industriais sob medida, com segurança e acabamento.</p>
+            <img class="service-photo" src="assets/portao2.jpg" alt="Portão metálico sob medida" loading="lazy">
+            <div class="service-body">
+              <div class="service-heading">
+                <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 40V14l4-5 4 5v26M32 40V14l4-5 4 5v26M16 18h16M16 26h16M16 34h16"/></svg>
+                <h3>Portões</h3>
+              </div>
+              <p>Modelos sob medida com segurança e acabamento. Também fazemos manutenção e automação.</p>
             </div>
           </article>
 
           <article class="service-card">
-            <img src="assets/corrimao1.jpg" alt="Corrimão metálico instalado em escada" loading="lazy">
-            <div class="service-content">
-              <h3>Corrimãos</h3>
-              <p>Resistência e proteção para áreas internas e externas, com acabamento profissional.</p>
+            <img class="service-photo" src="assets/corrimao1.jpg" alt="Corrimão metálico instalado em escada" loading="lazy">
+            <div class="service-body">
+              <div class="service-heading">
+                <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 34l24-20M12 38l24-20M13 32v8M23 24v8M33 16v8"/></svg>
+                <h3>Corrimãos</h3>
+              </div>
+              <p>Resistência e design para áreas internas e externas, com acabamento profissional.</p>
             </div>
           </article>
 
           <article class="service-card">
-            <img src="assets/corrimao4.jpg" alt="Guarda-corpo metálico" loading="lazy">
-            <div class="service-content">
-              <h3>Guarda-corpos</h3>
-              <p>Proteção para escadas, sacadas, varandas e mezaninos, com soluções duráveis.</p>
+            <img class="service-photo" src="assets/corrimao4.jpg" alt="Guarda-corpo metálico" loading="lazy">
+            <div class="service-body">
+              <div class="service-heading">
+                <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5l14 6v10c0 10-6 17-14 22C16 38 10 31 10 21V11l14-6zM17 24l5 5 10-12"/></svg>
+                <h3>Guarda-corpos</h3>
+              </div>
+              <p>Proteção com visual moderno e durabilidade para escadas, sacadas e varandas.</p>
             </div>
           </article>
 
           <article class="service-card">
-            <img src="assets/predio1.jpg" alt="Estrutura metálica em obra" loading="lazy">
-            <div class="service-content">
-              <h3>Estruturas metálicas</h3>
+            <img class="service-photo" src="assets/predio1.jpg" alt="Estrutura metálica em obra" loading="lazy">
+            <div class="service-body">
+              <div class="service-heading">
+                <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M7 40h34M11 40V20l13-12 13 12v20M11 20h26M18 40V25M30 40V25M15 15l18 25M33 15L15 40"/></svg>
+                <h3>Estruturas metálicas</h3>
+              </div>
               <p>Soluções práticas e reforçadas para obras, coberturas e projetos especiais.</p>
             </div>
           </article>
         </div>
-
-        <div class="services-grid services-grid-extra">
-          <article class="service-card service-card-horizontal">
-            <img src="assets/portao6.jpg" alt="Manutenção de portão metálico" loading="lazy">
-            <div class="service-content">
-              <span class="service-tag">Serviço adicional</span>
-              <h3>Manutenção</h3>
-              <p>Ajustes, reparos e manutenção preventiva para portões, corrimãos e estruturas.</p>
-            </div>
-          </article>
-
-          <article class="service-card service-card-horizontal">
-            <img src="assets/portao1.jpg" alt="Portão automático" loading="lazy">
-            <div class="service-content">
-              <span class="service-tag">Mais praticidade</span>
-              <h3>Automação de portões</h3>
-              <p>Instalação e adequação de sistemas de automação para mais controle e segurança.</p>
-            </div>
-          </article>
-        </div>
       </div>
     </section>
 
-    <section class="section work-showcase" id="trabalhos" aria-labelledby="work-title">
+    <section class="benefits" id="sobre" aria-labelledby="benefits-title">
       <div class="container">
-        <div class="section-heading section-heading-light">
-          <p class="eyebrow">Projetos executados</p>
-          <h2 id="work-title">Trabalhos realizados</h2>
-          <p>Fotos reais de serviços entregues pela Infinity Serralheria em residências, comércios e obras.</p>
-        </div>
-
-        <div class="gallery-grid">
-          <button class="gallery-item gallery-item-large" type="button" data-full="assets/portao1.jpg" aria-label="Ampliar foto de portão">
-            <img src="assets/portao1.jpg" alt="Portão metálico moderno" loading="lazy">
-          </button>
-          <button class="gallery-item" type="button" data-full="assets/portao3.jpg" aria-label="Ampliar foto de portão residencial">
-            <img src="assets/portao3.jpg" alt="Portão residencial" loading="lazy">
-          </button>
-          <button class="gallery-item" type="button" data-full="assets/corrimao2.jpg" aria-label="Ampliar foto de corrimão">
-            <img src="assets/corrimao2.jpg" alt="Corrimão em escada" loading="lazy">
-          </button>
-          <button class="gallery-item" type="button" data-full="assets/portao4.jpg" aria-label="Ampliar foto de portão">
-            <img src="assets/portao4.jpg" alt="Portão de imóvel em São Paulo" loading="lazy">
-          </button>
-          <button class="gallery-item" type="button" data-full="assets/corrimao3.jpg" aria-label="Ampliar foto de guarda-corpo">
-            <img src="assets/corrimao3.jpg" alt="Guarda-corpo metálico" loading="lazy">
-          </button>
-          <button class="gallery-item gallery-item-wide" type="button" data-full="assets/portao5.jpg" aria-label="Ampliar foto de portão e estrutura">
-            <img src="assets/portao5.jpg" alt="Portão e estrutura metálica" loading="lazy">
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section class="section video-section" aria-labelledby="video-title">
-      <div class="container">
-        <div class="section-heading section-heading-light">
-          <p class="eyebrow">Registros reais de obra</p>
-          <h2 id="video-title">Veja os detalhes da execução</h2>
-          <p>Vídeos feitos no local mostram instalação, proporção e acabamento dos trabalhos.</p>
-        </div>
-
-        <div class="video-grid">
-          <article class="video-card video-card-featured">
-            <video controls playsinline preload="none" poster="assets/corrimao1.jpg" aria-label="Vídeo de corrimão instalado em obra">
-              <source data-src="assets/videocorrimao.mp4" type="video/mp4">
-              Seu navegador não suporta vídeos HTML5.
-            </video>
-            <div class="video-copy">
-              <span>Registro em obra</span>
-              <h3>Corrimãos e guarda-corpos</h3>
-              <p>Execução e acabamento mostrados diretamente no local do serviço.</p>
-            </div>
-          </article>
-
-          <article class="video-card">
-            <video controls playsinline preload="none" poster="assets/portao2.jpg" aria-label="Vídeo de proteção metálica">
-              <source data-src="assets/videocerca.mp4" type="video/mp4">
-              Seu navegador não suporta vídeos HTML5.
-            </video>
-            <div class="video-copy">
-              <span>Trabalho real</span>
-              <h3>Proteções metálicas</h3>
-              <p>Detalhes da solução instalada e do resultado final.</p>
-            </div>
-          </article>
-
-          <article class="video-card">
-            <video controls playsinline preload="none" poster="assets/corrimao4.jpg" aria-label="Vídeo de escada e estrutura metálica">
-              <source data-src="assets/videoescadas.mp4" type="video/mp4">
-              Seu navegador não suporta vídeos HTML5.
-            </video>
-            <div class="video-copy">
-              <span>Na obra</span>
-              <h3>Escadas e estruturas</h3>
-              <p>Soluções adaptadas ao espaço com resistência e segurança.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section benefits" id="sobre" aria-labelledby="benefits-title">
-      <div class="container">
-        <div class="section-heading section-heading-light">
+        <div class="section-title benefits-title">
           <h2 id="benefits-title">Por que escolher a <span>Infinity</span> Serralheria?</h2>
         </div>
 
         <div class="benefits-grid">
           <article>
-            <div class="benefit-icon">✓</div>
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 5l7 5 9-1 3 9 7 6-5 8 1 9-9 3-6 7-8-5-9 1-3-9-7-6 5-8-1-9 9-3 6-7zM22 32l7 7 14-16"/></svg>
             <h3>Qualidade garantida</h3>
-            <p>Materiais adequados e cuidado no acabamento de cada serviço.</p>
+            <p>Materiais selecionados e acabamento impecável em cada detalhe.</p>
           </article>
           <article>
-            <div class="benefit-icon">◇</div>
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 6l20 8v14c0 14-8 24-20 31C20 52 12 42 12 28V14l20-8zM22 31l7 7 14-15"/></svg>
             <h3>Segurança</h3>
-            <p>Soluções resistentes, funcionais e planejadas para o uso diário.</p>
+            <p>Projetos que unem resistência, proteção e tranquilidade no uso diário.</p>
           </article>
           <article>
-            <div class="benefit-icon">◎</div>
+            <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M20 29a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM44 29a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM5 55v-7c0-9 7-16 15-16s15 7 15 16v7M29 55v-7c0-9 7-16 15-16s15 7 15 16v7"/></svg>
             <h3>Atendimento próximo</h3>
-            <p>Contato direto para entender o projeto e acompanhar a execução.</p>
+            <p>Acompanhamento do início ao pós-venda com atenção e transparência.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="cta-section" id="contato" aria-labelledby="cta-title">
+    <section class="cta" id="contato" aria-labelledby="cta-title">
       <div class="container cta-grid">
         <div class="cta-copy">
           <h2 id="cta-title">Vamos transformar seu projeto em <span>realidade?</span></h2>
-          <p>Envie fotos, medidas aproximadas ou uma descrição do que precisa e solicite seu orçamento.</p>
+          <p>Fale agora com a Infinity Serralheria e solicite seu orçamento.</p>
           <div class="cta-actions">
             <a class="btn btn-primary" href="https://wa.me/5511966321556?text=Olá%2C%20vim%20pelo%20site%20da%20Infinity%20Serralheria.%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank" rel="noopener noreferrer">
               <img src="assets/Whats.png" alt="" aria-hidden="true"> Chamar no WhatsApp
@@ -264,16 +149,16 @@
 
         <address class="contact-list">
           <div>
-            <span class="contact-symbol">⌖</span>
+            <span class="contact-icon pin">⌖</span>
             <p><strong>Atendemos São Paulo e região</strong><br>Av. Sanatório, 697, Jardim Modelo</p>
           </div>
           <div>
-            <img src="assets/Whats.png" alt="WhatsApp">
-            <p><strong>WhatsApp</strong><br><a href="https://wa.me/5511966321556" target="_blank" rel="noopener noreferrer">(11) 96632-1556</a></p>
+            <img class="contact-icon" src="assets/Whats.png" alt="WhatsApp">
+            <p><strong>(11) 96632-1556</strong></p>
           </div>
           <div>
-            <img src="assets/insta.png" alt="Instagram">
-            <p><strong>Instagram</strong><br><a href="https://www.instagram.com/infinity_serralheriaa/" target="_blank" rel="noopener noreferrer">@infinity_serralheriaa</a></p>
+            <img class="contact-icon icon-white" src="assets/insta.png" alt="Instagram">
+            <p><strong>@infinity_serralheriaa</strong></p>
           </div>
         </address>
       </div>
@@ -283,33 +168,16 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <a class="brand footer-brand" href="#inicio" aria-label="Voltar ao início">
-        <img src="assets/LogoInfinity.png" alt="Infinity Serralheria">
+        <span class="brand-crop brand-crop-small"><img src="assets/LogoInfinity.png" alt="Infinity Serralheria"></span>
       </a>
-
       <p>© <span id="current-year"></span> Infinity Serralheria. Todos os direitos reservados.</p>
-
       <div class="social-links">
-        <a href="https://www.instagram.com/infinity_serralheriaa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Infinity Serralheria">
-          <img src="assets/insta.png" alt="">
-        </a>
-        <a href="https://wa.me/5511966321556" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp da Infinity Serralheria">
-          <img src="assets/Whats.png" alt="">
-        </a>
+        <a href="https://www.instagram.com/infinity_serralheriaa/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="assets/insta.png" alt=""></a>
+        <a href="https://wa.me/5511966321556" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><img src="assets/Whats.png" alt=""></a>
       </div>
     </div>
     <p class="credit">Desenvolvido por <a href="https://xgreat.com.br" target="_blank" rel="noopener noreferrer">XGR Digital</a></p>
   </footer>
-
-  <a class="floating-whatsapp" href="https://wa.me/5511966321556?text=Olá%2C%20vim%20pelo%20site%20da%20Infinity%20Serralheria." target="_blank" rel="noopener noreferrer" aria-label="Chamar a Infinity Serralheria no WhatsApp">
-    <img src="assets/Whats.png" alt="">
-  </a>
-
-  <button class="back-to-top" type="button" aria-label="Voltar ao topo">↑</button>
-
-  <dialog class="lightbox" aria-label="Visualização ampliada da imagem">
-    <button class="lightbox-close" type="button" aria-label="Fechar imagem">×</button>
-    <img src="" alt="Trabalho ampliado da Infinity Serralheria">
-  </dialog>
 
   <script src="script.js"></script>
 </body>

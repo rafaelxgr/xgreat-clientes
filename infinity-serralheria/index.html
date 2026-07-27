@@ -11,6 +11,7 @@
 
   <link rel="icon" href="assets/FaviconInfinity.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="media-overrides.css">
 
   <script type="application/ld+json">
   {
@@ -196,37 +197,61 @@
 
     <section class="section video-section" aria-labelledby="video-title">
       <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">Veja em funcionamento</p>
-          <h2 id="video-title">Detalhes dos projetos</h2>
-          <p>Vídeos curtos para mostrar movimento, acabamento e execução sem deixar a página pesada.</p>
+        <div class="section-heading section-heading-left video-heading">
+          <p class="eyebrow">Registros reais de obra</p>
+          <h2 id="video-title">Veja os detalhes da execução</h2>
+          <p>Vídeos feitos durante os trabalhos mostram instalações, acabamento e soluções aplicadas diretamente no local.</p>
         </div>
 
-        <div class="video-grid">
-          <article class="video-card">
-            <video controls playsinline preload="none" poster="assets/portao2.jpg" aria-label="Vídeo de portão e cerca">
-              <source data-src="assets/videocerca.mp4" type="video/mp4">
-              Seu navegador não suporta vídeos HTML5.
-            </video>
-            <div><h3>Portões e proteção</h3><p>Detalhes do trabalho executado.</p></div>
+        <div class="video-layout">
+          <article class="video-card video-card-featured">
+            <div class="video-frame">
+              <span class="video-badge">Registro em obra</span>
+              <video controls playsinline preload="none" poster="assets/corrimao1.jpg" aria-label="Vídeo mostrando corrimão instalado em obra">
+                <source data-src="assets/videocorrimao.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos HTML5.
+              </video>
+            </div>
+            <div class="video-copy">
+              <p class="eyebrow">Acabamento no local</p>
+              <h3>Corrimãos e guarda-corpos</h3>
+              <p>Um registro direto da obra para mostrar proporção, instalação e acabamento do serviço executado.</p>
+              <a class="btn btn-outline" href="https://wa.me/5511966321556?text=Olá%2C%20vi%20os%20trabalhos%20no%20site%20da%20Infinity%20Serralheria%20e%20gostaria%20de%20pedir%20um%20orçamento." target="_blank" rel="noopener noreferrer">Pedir um orçamento</a>
+            </div>
           </article>
 
-          <article class="video-card">
-            <video controls playsinline preload="none" poster="assets/corrimao1.jpg" aria-label="Vídeo de corrimão">
-              <source data-src="assets/videocorrimao.mp4" type="video/mp4">
-              Seu navegador não suporta vídeos HTML5.
-            </video>
-            <div><h3>Corrimãos</h3><p>Acabamento e instalação em destaque.</p></div>
-          </article>
+          <div class="video-side">
+            <article class="video-card video-card-compact">
+              <div class="video-frame">
+                <span class="video-badge">Na obra</span>
+                <video controls playsinline preload="none" poster="assets/portao2.jpg" aria-label="Vídeo mostrando proteção metálica instalada">
+                  <source data-src="assets/videocerca.mp4" type="video/mp4">
+                  Seu navegador não suporta vídeos HTML5.
+                </video>
+              </div>
+              <div class="video-copy">
+                <h3>Proteções metálicas</h3>
+                <p>Detalhes reais da solução instalada e do resultado final.</p>
+              </div>
+            </article>
 
-          <article class="video-card">
-            <video controls playsinline preload="none" poster="assets/corrimao4.jpg" aria-label="Vídeo de escadas">
-              <source data-src="assets/videoescadas.mp4" type="video/mp4">
-              Seu navegador não suporta vídeos HTML5.
-            </video>
-            <div><h3>Escadas e estruturas</h3><p>Soluções planejadas para cada ambiente.</p></div>
-          </article>
+            <article class="video-card video-card-compact">
+              <div class="video-frame">
+                <span class="video-badge">Na obra</span>
+                <video controls playsinline preload="none" poster="assets/corrimao4.jpg" aria-label="Vídeo mostrando escada e estrutura metálica">
+                  <source data-src="assets/videoescadas.mp4" type="video/mp4">
+                  Seu navegador não suporta vídeos HTML5.
+                </video>
+              </div>
+              <div class="video-copy">
+                <h3>Escadas e estruturas</h3>
+                <p>Execução adaptada ao espaço, com resistência e segurança.</p>
+              </div>
+            </article>
+          </div>
         </div>
+
+        <p class="video-note">Registros reais feitos durante a execução. Sem imagens de catálogo, porque o trabalho entregue vale mais que cenário montado.</p>
       </div>
     </section>
 

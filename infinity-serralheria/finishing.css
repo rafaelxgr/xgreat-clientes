@@ -1,0 +1,347 @@
+/* Refinamento final: hero em largura total e acabamento mobile */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: #07141e;
+}
+
+.hero-inner.container {
+  width: 100%;
+  max-width: none;
+  min-height: 565px;
+  margin: 0;
+  border: 0;
+  background:
+    linear-gradient(90deg,
+      rgba(3, 13, 21, .99) 0%,
+      rgba(3, 13, 21, .95) 28%,
+      rgba(3, 13, 21, .80) 43%,
+      rgba(3, 13, 21, .34) 62%,
+      rgba(3, 13, 21, .06) 100%),
+    url("assets/portao1.jpg") 69% center / cover no-repeat;
+  box-shadow: inset 0 -80px 95px rgba(3, 10, 16, .28);
+}
+
+.hero-inner::after {
+  background:
+    linear-gradient(180deg, rgba(3, 11, 18, .08), transparent 62%, rgba(3, 11, 18, .44)),
+    radial-gradient(circle at 67% 43%, rgba(22, 140, 255, .10), transparent 32%);
+}
+
+.hero-content {
+  width: min(560px, 48%);
+  padding: 61px 0 61px max(34px, calc((100vw - var(--container)) / 2));
+}
+
+.hero h1 {
+  max-width: 520px;
+}
+
+.hero-content > p {
+  max-width: 540px;
+}
+
+.services-grid {
+  align-items: stretch;
+}
+
+.service-card,
+.service-card-featured {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service-photo,
+.service-card-featured .service-photo {
+  flex: 0 0 auto;
+  aspect-ratio: 16 / 10;
+}
+
+.service-body,
+.service-card-featured .service-body {
+  min-height: 166px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+
+.service-body p {
+  margin-top: auto;
+}
+
+.project-item,
+.project-item-main,
+.project-item-tall,
+.project-item-wide {
+  aspect-ratio: 16 / 11;
+}
+
+.floating-whatsapp {
+  width: 56px;
+  height: 56px;
+  min-height: 56px;
+  padding: 0;
+  border-width: 2px;
+}
+
+.floating-whatsapp img {
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 1040px) {
+  .hero-content {
+    width: min(560px, 56%);
+    padding-left: max(28px, calc((100vw - var(--container)) / 2));
+  }
+}
+
+@media (max-width: 820px) {
+  .site-header {
+    background: rgba(4, 14, 22, .98);
+  }
+
+  .header-inner {
+    width: calc(100% - 24px);
+  }
+
+  .hero-inner.container {
+    min-height: 630px;
+    align-items: flex-end;
+    background:
+      linear-gradient(180deg,
+        rgba(3, 12, 20, .06) 0%,
+        rgba(3, 12, 20, .20) 34%,
+        rgba(3, 12, 20, .86) 70%,
+        rgba(3, 12, 20, .99) 100%),
+      url("assets/portao1.jpg") 64% center / cover no-repeat;
+    box-shadow: none;
+  }
+
+  .hero-inner::after {
+    background: linear-gradient(180deg, rgba(4, 14, 22, .03), transparent 45%, rgba(4, 14, 22, .34));
+  }
+
+  .hero-content {
+    width: 100%;
+    padding: 220px 22px 40px;
+  }
+
+  .hero-kicker {
+    margin-bottom: 8px;
+    font-size: .63rem;
+  }
+
+  .hero h1 {
+    max-width: 100%;
+    margin-bottom: 14px;
+    font-size: clamp(2.85rem, 14.5vw, 4.25rem);
+    line-height: .91;
+  }
+
+  .hero h2 {
+    max-width: 520px;
+    margin-bottom: 11px;
+    font-size: clamp(1.08rem, 5.1vw, 1.45rem);
+  }
+
+  .hero-content > p {
+    max-width: 560px;
+    font-size: .88rem;
+  }
+
+  .hero-actions {
+    grid-template-columns: 1fr 1fr;
+    gap: 9px;
+    margin-top: 19px;
+  }
+
+  .hero-actions .btn {
+    min-height: 45px;
+    padding: 10px 12px;
+    font-size: .8rem;
+  }
+
+  .section-heading {
+    margin-bottom: 29px;
+  }
+
+  .section-heading h2,
+  .location-content h2,
+  .video-copy-block h2 {
+    font-size: clamp(1.85rem, 8.2vw, 2.75rem);
+  }
+
+  .service-card,
+  .service-card-featured {
+    grid-column: span 6;
+  }
+
+  .service-photo,
+  .service-card-featured .service-photo {
+    aspect-ratio: 4 / 3;
+  }
+
+  .service-body,
+  .service-card-featured .service-body {
+    min-height: 158px;
+    padding: 16px;
+  }
+
+  .service-icon {
+    width: 31px;
+    height: 31px;
+    margin-bottom: 8px;
+  }
+
+  .service-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .project-grid {
+    gap: 10px;
+  }
+
+  .project-item,
+  .project-item-main,
+  .project-item-tall,
+  .project-item-wide {
+    aspect-ratio: 4 / 3;
+  }
+
+  .benefits-grid article {
+    padding: 28px 24px;
+  }
+
+  .map-frame,
+  .map-frame iframe {
+    min-height: 330px;
+    height: 330px;
+  }
+
+  .floating-whatsapp {
+    width: 54px;
+    height: 54px;
+    min-height: 54px;
+  }
+
+  .floating-whatsapp img {
+    width: 31px;
+    height: 31px;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero-inner.container {
+    min-height: 610px;
+    background:
+      linear-gradient(180deg,
+        rgba(3, 12, 20, .04) 0%,
+        rgba(3, 12, 20, .18) 31%,
+        rgba(3, 12, 20, .88) 68%,
+        rgba(3, 12, 20, .995) 100%),
+      url("assets/portao1.jpg") 63% center / cover no-repeat;
+  }
+
+  .hero-content {
+    padding: 205px 17px 32px;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.7rem, 15vw, 3.8rem);
+  }
+
+  .hero h2 {
+    font-size: 1.08rem;
+  }
+
+  .hero-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card,
+  .service-card-featured {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    min-height: 154px;
+  }
+
+  .service-photo,
+  .service-card-featured .service-photo {
+    height: 100%;
+    min-height: 154px;
+    aspect-ratio: auto;
+  }
+
+  .service-body,
+  .service-card-featured .service-body {
+    min-height: 154px;
+    padding: 14px 14px 15px;
+  }
+
+  .service-body h3 {
+    margin-bottom: 5px;
+    font-size: .96rem;
+  }
+
+  .service-body p {
+    font-size: .75rem;
+    line-height: 1.45;
+  }
+
+  .service-badge {
+    margin-bottom: 6px;
+    padding: 4px 6px;
+    font-size: .5rem;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .project-item,
+  .project-item-main,
+  .project-item-tall,
+  .project-item-wide {
+    aspect-ratio: 1 / 1;
+  }
+
+  .project-item span {
+    left: 10px;
+    bottom: 9px;
+    font-size: .68rem;
+  }
+
+  .video-card video,
+  .video-card-main video {
+    height: 390px;
+  }
+
+  .benefits-grid article {
+    padding: 25px 20px;
+  }
+
+  .location-section,
+  .section,
+  .cta-section {
+    padding-block: 56px;
+  }
+
+  .cta-box {
+    padding: 23px 17px;
+  }
+
+  .floating-whatsapp {
+    right: 12px;
+    bottom: 12px;
+  }
+
+  .back-to-top {
+    display: none;
+  }
+}

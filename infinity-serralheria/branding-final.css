@@ -1,0 +1,168 @@
+/* Branding final do hero: composição mais limpa, larga e próxima da Via Vidros */
+
+.hero-inner.container {
+  min-height: 560px;
+  background:
+    linear-gradient(90deg,
+      rgba(3, 13, 21, .995) 0%,
+      rgba(3, 13, 21, .97) 23%,
+      rgba(3, 13, 21, .84) 39%,
+      rgba(3, 13, 21, .43) 58%,
+      rgba(3, 13, 21, .08) 100%),
+    url("assets/portao1.jpg") 70% center / cover no-repeat;
+}
+
+.hero-inner::after {
+  background:
+    linear-gradient(180deg, rgba(3, 11, 18, .08), transparent 64%, rgba(3, 11, 18, .45)),
+    radial-gradient(circle at 68% 42%, rgba(22, 140, 255, .09), transparent 34%);
+}
+
+.hero-content {
+  width: 590px;
+  max-width: calc(50vw - 44px);
+  margin-left: max(38px, calc((100vw - var(--container)) / 2));
+  padding: 58px 0 60px;
+}
+
+.hero-kicker {
+  margin-bottom: 12px;
+  white-space: nowrap;
+  font-size: .69rem;
+  letter-spacing: .15em;
+}
+
+.hero h1 {
+  max-width: 560px;
+  margin-bottom: 18px;
+  font-size: clamp(3.7rem, 5.2vw, 5.15rem);
+  line-height: .92;
+  letter-spacing: -.064em;
+}
+
+.hero h2 {
+  max-width: 560px;
+  margin-bottom: 13px;
+  font-size: clamp(1.25rem, 1.85vw, 1.65rem);
+  line-height: 1.26;
+  letter-spacing: -.012em;
+}
+
+.hero-content > p {
+  max-width: 555px;
+  color: #bccad4;
+  font-size: .92rem;
+  line-height: 1.62;
+}
+
+.hero-actions {
+  gap: 11px;
+  margin-top: 23px;
+}
+
+.hero-actions .btn {
+  min-height: 45px;
+  padding: 11px 18px;
+}
+
+@media (max-width: 1180px) {
+  .hero-content {
+    width: 550px;
+    max-width: 52vw;
+    margin-left: 32px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-inner.container {
+    min-height: 650px;
+    align-items: flex-end;
+    background:
+      linear-gradient(180deg,
+        rgba(3, 12, 20, .04) 0%,
+        rgba(3, 12, 20, .14) 32%,
+        rgba(3, 12, 20, .78) 65%,
+        rgba(3, 12, 20, .99) 100%),
+      url("assets/portao1.jpg") 64% center / cover no-repeat;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+    padding: 230px 24px 42px;
+  }
+
+  .hero-kicker {
+    white-space: normal;
+    font-size: .62rem;
+  }
+
+  .hero h1 {
+    max-width: 100%;
+    font-size: clamp(3rem, 13vw, 4.35rem);
+  }
+
+  .hero h2 {
+    max-width: 620px;
+    font-size: clamp(1.08rem, 4.5vw, 1.42rem);
+  }
+
+  .hero-content > p {
+    max-width: 620px;
+    font-size: .86rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero-inner.container {
+    min-height: 590px;
+    background:
+      linear-gradient(180deg,
+        rgba(3, 12, 20, .02) 0%,
+        rgba(3, 12, 20, .12) 30%,
+        rgba(3, 12, 20, .84) 63%,
+        rgba(3, 12, 20, .995) 100%),
+      url("assets/portao1.jpg") 62% center / cover no-repeat;
+  }
+
+  .hero-content {
+    padding: 190px 18px 31px;
+  }
+
+  .hero h1 {
+    margin-bottom: 12px;
+    font-size: clamp(2.75rem, 14.7vw, 3.75rem);
+  }
+
+  .hero h2 {
+    max-width: 28ch;
+    margin-bottom: 10px;
+    font-size: 1.04rem;
+    line-height: 1.3;
+  }
+
+  .hero-content > p {
+    max-width: 38ch;
+    font-size: .8rem;
+    line-height: 1.55;
+  }
+
+  .hero-actions {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 17px;
+  }
+
+  .hero-actions .btn {
+    min-height: 43px;
+    padding: 9px 10px;
+    font-size: .76rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-actions {
+    grid-template-columns: 1fr;
+  }
+}

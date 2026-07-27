@@ -1,6 +1,11 @@
 (() => {
   'use strict';
 
+  const finishingStyles = document.createElement('link');
+  finishingStyles.rel = 'stylesheet';
+  finishingStyles.href = 'finishing.css?v=1';
+  document.head.appendChild(finishingStyles);
+
   const body = document.body;
   const menuToggle = document.querySelector('.menu-toggle');
   const mainNav = document.querySelector('.main-nav');

@@ -6,6 +6,11 @@
   finishingStyles.href = 'finishing.css?v=1';
   document.head.appendChild(finishingStyles);
 
+  const brandingStyles = document.createElement('link');
+  brandingStyles.rel = 'stylesheet';
+  brandingStyles.href = 'branding-final.css?v=1';
+  document.head.appendChild(brandingStyles);
+
   const body = document.body;
   const menuToggle = document.querySelector('.menu-toggle');
   const mainNav = document.querySelector('.main-nav');
